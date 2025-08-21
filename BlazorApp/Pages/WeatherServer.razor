@@ -1,9 +1,6 @@
 ﻿@page "/weather-server"
 @using BlazorApp.Model
 
-
-@* @rendermode InteractiveAuto *@
-
 @inject IWeatherService _service
 
 <PageTitle>Weather</PageTitle>
@@ -53,3 +50,4 @@ else
         forecasts = await _service.GetForecasts();
     }
 }
+
